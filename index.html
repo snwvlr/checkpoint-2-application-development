@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atores e Atrizes | CheckPoint 2</title>
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+  <main class="pagina">
+    <header class="cabecalho">
+      <h1>Atores e Atrizes</h1>
+      <label for="busca">Buscar pelo nome</label>
+      <input
+        type="text"
+        id="busca"
+        placeholder="Digite o nome de um ator ou atriz"
+        oninput="filtrarAtores()"
+        autocomplete="off"
+      >
+    </header>
+
+    <section id="atores" class="grade" aria-label="Lista de atores e atrizes"></section>
+  </main>
+
+  <script src="js/dados.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
